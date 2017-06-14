@@ -869,7 +869,7 @@ html {
 }
 
 .left-col {
-    background: #4d4d4d;
+    background: #000;
     width: 300px;
     position: fixed;
     opacity: 1;
