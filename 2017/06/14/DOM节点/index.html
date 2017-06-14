@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="www.liubo666.cn">
-  <title>匆匆那年 | 刘博的Blog</title>
+  <title>DOM节点 | 刘博的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="匆匆那年">
+  <meta name="description" content="这段代码创建新的 &amp;lt;p&amp;gt;元素：">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="匆匆那年">
-<meta property="og:url" content="www.liubo666.cn/2017/06/14/匆匆那年/index.html">
+<meta property="og:title" content="DOM节点">
+<meta property="og:url" content="www.liubo666.cn/2017/06/14/DOM节点/index.html">
 <meta property="og:site_name" content="刘博的Blog">
-<meta property="og:description" content="匆匆那年">
-<meta property="og:updated_time" content="2017-06-14T14:43:23.385Z">
+<meta property="og:description" content="这段代码创建新的 &amp;lt;p&amp;gt;元素：">
+<meta property="og:updated_time" content="2017-06-14T14:53:48.705Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="匆匆那年">
-<meta name="twitter:description" content="匆匆那年">
+<meta name="twitter:title" content="DOM节点">
+<meta name="twitter:description" content="这段代码创建新的 &amp;lt;p&amp;gt;元素：">
   
     <link rel="alternative" href="/atom.xml" title="刘博的Blog" type="application/atom+xml">
   
@@ -149,28 +150,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-匆匆那年" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-DOM节点" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      匆匆那年
+      DOM节点
     </h1>
   
 
         
-        <a href="/2017/06/14/匆匆那年/" class="archive-article-date">
-  	<time datetime="2017-06-14T14:40:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
+        <a href="/2017/06/14/DOM节点/" class="archive-article-date">
+  	<time datetime="2017-06-14T14:46:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="匆匆那年"><a href="#匆匆那年" class="headerlink" title="匆匆那年"></a>匆匆那年</h1><a id="more"></a>
-<p>匆匆那年我们究竟说了几遍再见之后再拖延<br>可惜谁有没有爱过不是一场七情上面的雄辩<br>匆匆那年我们一时匆忙撂下难以承受的诺言<br>只有等别人兑现<br>不怪那吻痕还没积累成茧<br>拥抱着冬眠也没能羽化再成仙<br>不怪这一段情没空反复再排练<br>是岁月宽容恩赐反悔的时间<br>如果再见不能红着眼是否还能红着脸<br>就像那年匆促刻下永远一起那样美丽的谣言<br>如果过去还值得眷恋别太快冰释前嫌<br>谁甘心就这样彼此无挂也无牵<br>我们要互相亏欠要不然凭何怀缅<br>匆匆那年我们见过太少世面只爱看同一张脸<br>那么莫名其妙那么讨人欢喜闹起来又太讨厌<br>相爱那年活该匆匆因为我们不懂顽固的诺言<br>只是分手的前言<br>不怪那天太冷泪滴水成冰<br>春风也一样没吹进凝固的照片<br>不怪每一个人没能完整爱一遍<br>是岁月善意落下残缺的悬念<br>如果再见不能红着眼是否还能红着脸<br>就像那年匆促刻下永远一起那样美丽的谣言<br>如果过去还值得眷恋别太快冰释前嫌<br>谁甘心就这样彼此无挂也无牵<br>我们要互相亏欠 我们要藕断丝连</p>
+        <p>这段代码创建新的 <code>&lt;p&gt;</code>元素：<br><a id="more"></a><br><figure class="highlight plain"><figcaption><span>[] [title] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;div id=&quot;div1&quot;&gt;</div><div class="line">&lt;p id=&quot;p1&quot;&gt;这是一个段落&lt;/p&gt;</div><div class="line">&lt;p id=&quot;p2&quot;&gt;这是另一个段落&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">var para=document.createElement(&quot;p&quot;);</div><div class="line">var node=document.createTextNode(&quot;这是新段落。&quot;);</div><div class="line">para.appendChild(node);</div><div class="line"></div><div class="line">var element=document.getElementById(&quot;div1&quot;);</div><div class="line">element.appendChild(para);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 
       
 
@@ -210,6 +210,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -260,7 +271,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http:www.liubo666.cn/2017/06/14/匆匆那年/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http:www.liubo666.cn/2017/06/14/DOM节点/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -274,18 +285,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/06/14/DOM节点/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          DOM节点
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/06/14/没有上锁的门/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">没有上锁的门</div>
+    <a href="/2017/06/14/匆匆那年/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">匆匆那年</div>
       <i class="icon-circle-right"></i>
     </a>
   
