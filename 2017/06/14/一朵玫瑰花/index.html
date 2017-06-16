@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://blog.liubo666.cn">
-  <title>计算机二级查询 | 刘博的Blog</title>
+  <title>一朵玫瑰花 | 刘博的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是一段代码">
-<meta name="keywords" content="php">
+  <meta name="description" content="一朵玫瑰花">
+<meta name="keywords" content="鸡汤">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机二级查询">
-<meta property="og:url" content="https://blog.liubo666.cn/2017/06/14/计算机二级查询/index.html">
+<meta property="og:title" content="一朵玫瑰花">
+<meta property="og:url" content="https://blog.liubo666.cn/2017/06/14/一朵玫瑰花/index.html">
 <meta property="og:site_name" content="刘博的Blog">
-<meta property="og:description" content="这是一段代码">
-<meta property="og:updated_time" content="2017-06-16T09:20:18.150Z">
+<meta property="og:description" content="一朵玫瑰花">
+<meta property="og:updated_time" content="2017-06-16T09:19:54.144Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="计算机二级查询">
-<meta name="twitter:description" content="这是一段代码">
+<meta name="twitter:title" content="一朵玫瑰花">
+<meta name="twitter:description" content="一朵玫瑰花">
   
     <link rel="alternative" href="/atom.xml" title="刘博的Blog" type="application/atom+xml">
   
@@ -170,28 +170,42 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-计算机二级查询" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-一朵玫瑰花" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      计算机二级查询
+      一朵玫瑰花
     </h1>
   
 
         
-        <a href="/2017/06/14/计算机二级查询/" class="archive-article-date">
-  	<time datetime="2017-06-14T15:08:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
+        <a href="/2017/06/14/一朵玫瑰花/" class="archive-article-date">
+  	<time datetime="2017-06-14T13:09:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="这是一段代码"><a href="#这是一段代码" class="headerlink" title="这是一段代码"></a>这是一段代码</h1><a id="more"></a>
-<h2 id="获取验证码图片，存cookie"><a href="#获取验证码图片，存cookie" class="headerlink" title="获取验证码图片，存cookie"></a>获取验证码图片，存cookie</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">// $cookie_jar = dirname(__FILE__).&quot;./cookie/123.cookie&quot;;</div><div class="line">$cookie_jar = tempnam(&apos;./cookie&apos;,&apos;123&apos;);</div><div class="line">$ch = curl_init();</div><div class="line">curl_setopt($ch, CURLOPT_URL, &quot;http://search.neea.edu.cn/Imgs.do?act=verify&amp;t=0.8841180045674784&quot;);</div><div class="line">curl_setopt($ch, CURLOPT_REFERER, &quot;http://search.neea.edu.cn/QueryMarkUpAction.do?act=doQueryCond&amp;sid=300&amp;pram=results&quot;);</div><div class="line">//设置头文件的信息作为数据流输出</div><div class="line">curl_setopt($ch, CURLOPT_HEADER, 0);</div><div class="line">//设置获取的信息以文件流的形式返回，而不是直接输出。</div><div class="line">curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);</div><div class="line">curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie_jar);</div><div class="line">//执行命令</div><div class="line">$img = curl_exec($ch);</div><div class="line">curl_close($ch);</div><div class="line">$img1 = base64_encode($img);</div><div class="line">$img2 = base64_decode($img1);</div><div class="line">file_put_contents(&apos;./img.png&apos;, $img2);</div><div class="line">echo &quot;&lt;input type=\&quot;hidden\&quot; id=\&quot;cookie\&quot; value=\&quot;&quot;.$cookie_jar.&quot;\&quot;&gt;&quot;;//发送cookie文件地址</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+        <h1 id="一朵玫瑰花"><a href="#一朵玫瑰花" class="headerlink" title="一朵玫瑰花"></a>一朵玫瑰花</h1><a id="more"></a>
+<p>有位绅士在花店门口停了车，他打算向花店订一束花，请他们送去给远在故乡的母亲。</p>
+<p>绅士正要走进店门时，发现有个小女孩坐在路上哭，绅士走到小女孩面前问她说：</p>
+<p>「孩子，为什么坐在这里哭？」</p>
+<p>「我想买一朵玫瑰花送给妈妈，可是我的钱不够。」孩子说。绅士听了感到心疼。</p>
+<p>「这样啊……」于是绅士牵著小女孩的手走进花店，先订了要送给母亲的花束，然后给小女孩买了一朵玫瑰花。走出花店时绅士向小女孩提议，要开车送她回家。</p>
+<p>「真的要送我回家吗？」</p>
+<p>「当然啊！」</p>
+<p>「那你送我去妈妈那里好了。可是叔叔，我妈妈住的地方，离这里很远。」</p>
+<p>「早知道就不载你了。」绅士开玩笑地说。</p>
+<p>绅士照小女孩说的一直开了过去，没想到走出市区大马路之后，随著蜿蜒山路前行，竟然来到了墓园。小女孩把花放在一座新坟旁边，她为了给一个月前刚过世的 母 亲，献上一朵玫瑰花，而走了一大段远路。绅士将小女孩送回家中，然后再度折返花店。他取消了要寄给母亲的花束，而改买了一大束鲜花，直奔离这里有五小时车 程的母亲家中，他要亲自将花献给妈妈。</p>
+<p>一朵玫瑰花</p>
+<p>为逝者举行盛大丧礼，</p>
+<p>不如在他在世时，</p>
+<p>善尽孝心。</p>
+
       
 
       
@@ -235,7 +249,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">鸡汤</a>
         		</li>
       		
 		</ul>
@@ -247,7 +261,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/php/" class="article-tag-list-link color4">php</a>
+        			<a href="/categories/其他/" class="article-tag-list-link color3">其他</a>
         		</li>
       		
 		</ul>
@@ -302,7 +316,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://blog.liubo666.cn/2017/06/14/计算机二级查询/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://blog.liubo666.cn/2017/06/14/一朵玫瑰花/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -316,18 +330,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/06/16/Hexo使用/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/06/14/没有上锁的门/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Hexo使用
+          没有上锁的门
         
       </div>
     </a>
   
   
-    <a href="/2017/06/14/DOM节点/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">DOM节点</div>
+    <a href="/2017/06/14/666/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">666</div>
       <i class="icon-circle-right"></i>
     </a>
   

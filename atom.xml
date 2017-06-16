@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.liubo666.cn/"/>
-  <updated>2017-06-16T04:38:17.402Z</updated>
+  <updated>2017-06-16T09:12:18.452Z</updated>
   <id>https://blog.liubo666.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://blog.liubo666.cn/2017/06/16/Hexo%E4%BD%BF%E7%94%A8/"/>
     <id>https://blog.liubo666.cn/2017/06/16/Hexo使用/</id>
     <published>2017-06-16T04:35:39.000Z</published>
-    <updated>2017-06-16T04:38:17.402Z</updated>
+    <updated>2017-06-16T09:12:18.452Z</updated>
     
     <content type="html"><![CDATA[<h1 id="hexo-常用命令"><a href="#hexo-常用命令" class="headerlink" title="hexo 常用命令"></a>hexo 常用命令</h1><p>hexo clean 清除存储</p>
 ]]></content>
@@ -32,7 +32,7 @@
     
     </summary>
     
-      <category term="Hexo" scheme="https://blog.liubo666.cn/categories/Hexo/"/>
+      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
     
     
       <category term="Hexo" scheme="https://blog.liubo666.cn/tags/Hexo/"/>
@@ -44,7 +44,7 @@
     <link href="https://blog.liubo666.cn/2017/06/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7%E6%9F%A5%E8%AF%A2/"/>
     <id>https://blog.liubo666.cn/2017/06/14/计算机二级查询/</id>
     <published>2017-06-14T15:08:59.000Z</published>
-    <updated>2017-06-15T14:45:30.918Z</updated>
+    <updated>2017-06-16T09:20:18.150Z</updated>
     
     <content type="html"><![CDATA[<h1 id="这是一段代码"><a href="#这是一段代码" class="headerlink" title="这是一段代码"></a>这是一段代码</h1><a id="more"></a>
 <h2 id="获取验证码图片，存cookie"><a href="#获取验证码图片，存cookie" class="headerlink" title="获取验证码图片，存cookie"></a>获取验证码图片，存cookie</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">// $cookie_jar = dirname(__FILE__).&quot;./cookie/123.cookie&quot;;</div><div class="line">$cookie_jar = tempnam(&apos;./cookie&apos;,&apos;123&apos;);</div><div class="line">$ch = curl_init();</div><div class="line">curl_setopt($ch, CURLOPT_URL, &quot;http://search.neea.edu.cn/Imgs.do?act=verify&amp;t=0.8841180045674784&quot;);</div><div class="line">curl_setopt($ch, CURLOPT_REFERER, &quot;http://search.neea.edu.cn/QueryMarkUpAction.do?act=doQueryCond&amp;sid=300&amp;pram=results&quot;);</div><div class="line">//设置头文件的信息作为数据流输出</div><div class="line">curl_setopt($ch, CURLOPT_HEADER, 0);</div><div class="line">//设置获取的信息以文件流的形式返回，而不是直接输出。</div><div class="line">curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);</div><div class="line">curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie_jar);</div><div class="line">//执行命令</div><div class="line">$img = curl_exec($ch);</div><div class="line">curl_close($ch);</div><div class="line">$img1 = base64_encode($img);</div><div class="line">$img2 = base64_decode($img1);</div><div class="line">file_put_contents(&apos;./img.png&apos;, $img2);</div><div class="line">echo &quot;&lt;input type=\&quot;hidden\&quot; id=\&quot;cookie\&quot; value=\&quot;&quot;.$cookie_jar.&quot;\&quot;&gt;&quot;;//发送cookie文件地址</div><div class="line">?&gt;</div></pre></td></tr></table></figure>]]></content>
@@ -54,6 +54,8 @@
       &lt;h1 id=&quot;这是一段代码&quot;&gt;&lt;a href=&quot;#这是一段代码&quot; class=&quot;headerlink&quot; title=&quot;这是一段代码&quot;&gt;&lt;/a&gt;这是一段代码&lt;/h1&gt;
     
     </summary>
+    
+      <category term="php" scheme="https://blog.liubo666.cn/categories/php/"/>
     
     
       <category term="php" scheme="https://blog.liubo666.cn/tags/php/"/>
@@ -65,7 +67,7 @@
     <link href="https://blog.liubo666.cn/2017/06/14/DOM%E8%8A%82%E7%82%B9/"/>
     <id>https://blog.liubo666.cn/2017/06/14/DOM节点/</id>
     <published>2017-06-14T14:46:57.000Z</published>
-    <updated>2017-06-14T15:02:13.448Z</updated>
+    <updated>2017-06-16T09:12:54.634Z</updated>
     
     <content type="html"><![CDATA[<p>这段代码创建新的 <code>&lt;p&gt;</code>元素：<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;div id=&quot;div1&quot;&gt;</div><div class="line">&lt;p id=&quot;p1&quot;&gt;这是一个段落&lt;/p&gt;</div><div class="line">&lt;p id=&quot;p2&quot;&gt;这是另一个段落&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">var para=document.createElement(&quot;p&quot;);</div><div class="line">var node=document.createTextNode(&quot;这是新段落。&quot;);</div><div class="line">para.appendChild(node);</div><div class="line"></div><div class="line">var element=document.getElementById(&quot;div1&quot;);</div><div class="line">element.appendChild(para);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 ]]></content>
@@ -75,6 +77,8 @@
       &lt;p&gt;这段代码创建新的 &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;元素：&lt;br&gt;
     
     </summary>
+    
+      <category term="javascript" scheme="https://blog.liubo666.cn/categories/javascript/"/>
     
     
       <category term="javascript" scheme="https://blog.liubo666.cn/tags/javascript/"/>
@@ -86,7 +90,7 @@
     <link href="https://blog.liubo666.cn/2017/06/14/%E5%8C%86%E5%8C%86%E9%82%A3%E5%B9%B4/"/>
     <id>https://blog.liubo666.cn/2017/06/14/匆匆那年/</id>
     <published>2017-06-14T14:40:25.000Z</published>
-    <updated>2017-06-15T09:31:48.693Z</updated>
+    <updated>2017-06-16T09:18:17.566Z</updated>
     
     <content type="html"><![CDATA[<h1 id="匆匆那年"><a href="#匆匆那年" class="headerlink" title="匆匆那年"></a>匆匆那年</h1><a id="more"></a>
 <p>匆匆那年我们究竟说了几遍再见之后再拖延<br>可惜谁有没有爱过不是一场七情上面的雄辩<br>匆匆那年我们一时匆忙撂下难以承受的诺言<br>只有等别人兑现<br>不怪那吻痕还没积累成茧<br>拥抱着冬眠也没能羽化再成仙<br>不怪这一段情没空反复再排练<br>是岁月宽容恩赐反悔的时间<br>如果再见不能红着眼是否还能红着脸<br>就像那年匆促刻下永远一起那样美丽的谣言<br>如果过去还值得眷恋别太快冰释前嫌<br>谁甘心就这样彼此无挂也无牵<br>我们要互相亏欠要不然凭何怀缅<br>匆匆那年我们见过太少世面只爱看同一张脸<br>那么莫名其妙那么讨人欢喜闹起来又太讨厌<br>相爱那年活该匆匆因为我们不懂顽固的诺言<br>只是分手的前言<br>不怪那天太冷泪滴水成冰<br>春风也一样没吹进凝固的照片<br>不怪每一个人没能完整爱一遍<br>是岁月善意落下残缺的悬念<br>如果再见不能红着眼是否还能红着脸<br>就像那年匆促刻下永远一起那样美丽的谣言<br>如果过去还值得眷恋别太快冰释前嫌<br>谁甘心就这样彼此无挂也无牵<br>我们要互相亏欠 我们要藕断丝连</p>
@@ -98,6 +102,8 @@
     
     </summary>
     
+      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
+    
     
       <category term="歌词" scheme="https://blog.liubo666.cn/tags/%E6%AD%8C%E8%AF%8D/"/>
     
@@ -108,7 +114,7 @@
     <link href="https://blog.liubo666.cn/2017/06/14/%E6%B2%A1%E6%9C%89%E4%B8%8A%E9%94%81%E7%9A%84%E9%97%A8/"/>
     <id>https://blog.liubo666.cn/2017/06/14/没有上锁的门/</id>
     <published>2017-06-14T14:12:49.000Z</published>
-    <updated>2017-06-14T14:18:11.902Z</updated>
+    <updated>2017-06-16T09:20:02.929Z</updated>
     
     <content type="html"><![CDATA[<h1 id="没有上锁的门"><a href="#没有上锁的门" class="headerlink" title="没有上锁的门"></a>没有上锁的门</h1><a id="more"></a>
 <p>乡下小村庄的偏僻小屋里住著一对母女，母亲深怕遭窃总是一到晚上便在门把上连锁三道锁；女儿则厌恶了像风景画般枯燥而一成不变的乡村生活，她向往都市， 想去看看自己透过收音机所想象的那个华丽世界。某天清晨，女儿为了追求那虚幻的梦离开了母亲身边。她趁母亲睡觉时偷偷离家出走了。</p>
@@ -129,17 +135,19 @@
     
     </summary>
     
+      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
+    
     
       <category term="鸡汤" scheme="https://blog.liubo666.cn/tags/%E9%B8%A1%E6%B1%A4/"/>
     
   </entry>
   
   <entry>
-    <title>心灵鸡汤</title>
-    <link href="https://blog.liubo666.cn/2017/06/14/%E5%BF%83%E7%81%B5%E9%B8%A1%E6%B1%A4/"/>
-    <id>https://blog.liubo666.cn/2017/06/14/心灵鸡汤/</id>
+    <title>一朵玫瑰花</title>
+    <link href="https://blog.liubo666.cn/2017/06/14/%E4%B8%80%E6%9C%B5%E7%8E%AB%E7%91%B0%E8%8A%B1/"/>
+    <id>https://blog.liubo666.cn/2017/06/14/一朵玫瑰花/</id>
     <published>2017-06-14T13:09:15.000Z</published>
-    <updated>2017-06-14T13:17:52.616Z</updated>
+    <updated>2017-06-16T09:19:54.144Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一朵玫瑰花"><a href="#一朵玫瑰花" class="headerlink" title="一朵玫瑰花"></a>一朵玫瑰花</h1><a id="more"></a>
 <p>有位绅士在花店门口停了车，他打算向花店订一束花，请他们送去给远在故乡的母亲。</p>
@@ -164,6 +172,8 @@
     
     </summary>
     
+      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
+    
     
       <category term="鸡汤" scheme="https://blog.liubo666.cn/tags/%E9%B8%A1%E6%B1%A4/"/>
     
@@ -171,10 +181,10 @@
   
   <entry>
     <title>666</title>
-    <link href="https://blog.liubo666.cn/2017/06/14/123/"/>
-    <id>https://blog.liubo666.cn/2017/06/14/123/</id>
+    <link href="https://blog.liubo666.cn/2017/06/14/666/"/>
+    <id>https://blog.liubo666.cn/2017/06/14/666/</id>
     <published>2017-06-14T12:55:00.000Z</published>
-    <updated>2017-06-14T14:19:05.106Z</updated>
+    <updated>2017-06-16T09:20:32.903Z</updated>
     
     <content type="html"><![CDATA[<h1 id="kfodsjldjl"><a href="#kfodsjldjl" class="headerlink" title="kfodsjldjl"></a>kfodsjldjl</h1><h1 id="lsjf"><a href="#lsjf" class="headerlink" title="lsjf"></a>lsjf</h1><p>测试</p>
 ]]></content>
@@ -184,6 +194,8 @@
       &lt;h1 id=&quot;kfodsjldjl&quot;&gt;&lt;a href=&quot;#kfodsjldjl&quot; class=&quot;headerlink&quot; title=&quot;kfodsjldjl&quot;&gt;&lt;/a&gt;kfodsjldjl&lt;/h1&gt;&lt;h1 id=&quot;lsjf&quot;&gt;&lt;a href=&quot;#lsjf&quot; class=&quot;head
     
     </summary>
+    
+      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
     
     
       <category term="666" scheme="https://blog.liubo666.cn/tags/666/"/>
@@ -195,7 +207,7 @@
     <link href="https://blog.liubo666.cn/2017/06/13/My-first-page/"/>
     <id>https://blog.liubo666.cn/2017/06/13/My-first-page/</id>
     <published>2017-06-13T14:55:00.000Z</published>
-    <updated>2017-06-14T05:23:22.897Z</updated>
+    <updated>2017-06-16T09:20:51.673Z</updated>
     
     <content type="html"><![CDATA[<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><h3 id="666"><a href="#666" class="headerlink" title="666"></a>666</h3><p>666666</p>
 ]]></content>
@@ -205,6 +217,8 @@
       &lt;h2 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h2&gt;&lt;h3 id=&quot;666&quot;&gt;&lt;a href=&quot;#666&quot; class=&quot;headerlink&quot; title=&quot;666&quot;&gt;&lt;/a&gt;666&lt;/h3&gt;&lt;p
     
     </summary>
+    
+      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
     
     
       <category term="666" scheme="https://blog.liubo666.cn/tags/666/"/>
