@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="https://blog.liubo666.cn">
   <title>DOM节点 | 刘博的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这段代码创建新的 &amp;lt;p&amp;gt;元素：">
+  <meta name="description" content="这段代码创建新的&amp;lt;p&amp;gt;元素：">
 <meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DOM节点">
 <meta property="og:url" content="https://blog.liubo666.cn/2017/06/14/DOM节点/index.html">
 <meta property="og:site_name" content="刘博的Blog">
-<meta property="og:description" content="这段代码创建新的 &amp;lt;p&amp;gt;元素：">
-<meta property="og:updated_time" content="2017-06-16T09:12:54.634Z">
+<meta property="og:description" content="这段代码创建新的&amp;lt;p&amp;gt;元素：">
+<meta property="og:updated_time" content="2017-06-16T13:41:55.048Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DOM节点">
-<meta name="twitter:description" content="这段代码创建新的 &amp;lt;p&amp;gt;元素：">
+<meta name="twitter:description" content="这段代码创建新的&amp;lt;p&amp;gt;元素：">
   
     <link rel="alternative" href="/atom.xml" title="刘博的Blog" type="application/atom+xml">
   
@@ -35,16 +35,17 @@
   
 
   
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?bfd5ba5a7abe5707b36f001e44c146ea";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
 
-  <script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?bfd5ba5a7abe5707b36f001e44c146ea";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-  </script>
+
 
 </head>
 
@@ -190,8 +191,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这段代码创建新的 <code>&lt;p&gt;</code>元素：<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;div id=&quot;div1&quot;&gt;</div><div class="line">&lt;p id=&quot;p1&quot;&gt;这是一个段落&lt;/p&gt;</div><div class="line">&lt;p id=&quot;p2&quot;&gt;这是另一个段落&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;script&gt;</div><div class="line">var para=document.createElement(&quot;p&quot;);</div><div class="line">var node=document.createTextNode(&quot;这是新段落。&quot;);</div><div class="line">para.appendChild(node);</div><div class="line"></div><div class="line">var element=document.getElementById(&quot;div1&quot;);</div><div class="line">element.appendChild(para);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
-
+        <p>这段代码创建新的<code>&lt;p&gt;</code>元素：<br><a id="more"></a></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"div1"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"p1"</span>&gt;</span>这是一个段落<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"p2"</span>&gt;</span>这是另一个段落<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">var para=document.createElement("p");</div><div class="line">var node=document.createTextNode("这是新段落。");</div><div class="line">para.appendChild(node);</div><div class="line"></div><div class="line">var element=document.getElementById("div1");</div><div class="line">element.appendChild(para);</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
       
 
       
