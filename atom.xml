@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.liubo666.cn/"/>
-  <updated>2017-06-16T14:48:17.448Z</updated>
+  <updated>2017-06-17T04:58:49.209Z</updated>
   <id>https://blog.liubo666.cn/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu php环境配置</title>
+    <link href="https://blog.liubo666.cn/2017/06/17/ubuntu-php%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>https://blog.liubo666.cn/2017/06/17/ubuntu-php环境配置/</id>
+    <published>2017-06-17T04:54:41.000Z</published>
+    <updated>2017-06-17T04:58:49.209Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a>Apache</h1><p><strong>安装mysql</strong><br>sudo apt-get install mysql-server<br><strong>安装apache2</strong><br><a id="more"></a><br>sudo apt-get install apache2<br>重启apache<br>sudo /etc/init.d/apache2 restart<br><strong>安装php</strong><br>sudo apt-get install php<br>sudo apt-get install libapache2-mod-php<br>更改权限<br> sudo chmod 777 /var/www<br>建立php探针<br>sudo vim /var/www/phpinfo.php<br>&lt;?php<br>phpinfo();<br>?&gt;<br><strong>安装phpmyadmin</strong><br>sudo apt-get install phpmyadmin<br>将phpmyadmin复制到www<br>sudo cp /usr/share/phpmyadmin /var/www -a<br><strong>更改localhost根目录</strong><br>sudo vim  /etc/apache2/sites-available/000-default.conf<br>将DocumentRoot /var/www/html改为自己想要的目录</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Apache&quot;&gt;&lt;a href=&quot;#Apache&quot; class=&quot;headerlink&quot; title=&quot;Apache&quot;&gt;&lt;/a&gt;Apache&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;安装mysql&lt;/strong&gt;&lt;br&gt;sudo apt-get install mysql-server&lt;br&gt;&lt;strong&gt;安装apache2&lt;/strong&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="ubuntu" scheme="https://blog.liubo666.cn/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>人生需淡定</title>
@@ -35,30 +58,6 @@
     
     
       <category term="鸡汤" scheme="https://blog.liubo666.cn/tags/%E9%B8%A1%E6%B1%A4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo使用</title>
-    <link href="https://blog.liubo666.cn/2017/06/16/Hexo%E4%BD%BF%E7%94%A8/"/>
-    <id>https://blog.liubo666.cn/2017/06/16/Hexo使用/</id>
-    <published>2017-06-16T04:35:39.000Z</published>
-    <updated>2017-06-16T09:12:18.452Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="hexo-常用命令"><a href="#hexo-常用命令" class="headerlink" title="hexo 常用命令"></a>hexo 常用命令</h1><p>hexo clean 清除存储</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;hexo-常用命令&quot;&gt;&lt;a href=&quot;#hexo-常用命令&quot; class=&quot;headerlink&quot; title=&quot;hexo 常用命令&quot;&gt;&lt;/a&gt;hexo 常用命令&lt;/h1&gt;&lt;p&gt;hexo clean 清除存储&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
-    
-    
-      <category term="Hexo" scheme="https://blog.liubo666.cn/tags/Hexo/"/>
     
   </entry>
   

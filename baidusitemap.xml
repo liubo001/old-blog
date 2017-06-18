@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://blog.liubo666.cn/2017/06/17/ubuntu-php%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2017-06-17T04:58:49.209Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu php环境配置</title>
+        <pubTime>2017-06-17T04:54:41.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="其他" url="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://blog.liubo666.cn/2017/06/16/%E4%BA%BA%E7%94%9F%E9%9C%80%E6%B7%A1%E5%AE%9A/</loc>
     <lastmod>2017-06-16T14:48:17.448Z</lastmod>
     <data>
@@ -153,26 +173,6 @@
         <pubTime>2017-06-14T14:40:25.000Z</pubTime>
         
         <tag>歌词</tag>
-         
-         
-           
-             
-              <breadCrumb title="其他" url="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://blog.liubo666.cn/2017/06/16/Hexo%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2017-06-16T09:12:18.452Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo使用</title>
-        <pubTime>2017-06-16T04:35:39.000Z</pubTime>
-        
-        <tag>Hexo</tag>
          
          
            
