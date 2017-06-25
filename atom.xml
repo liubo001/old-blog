@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.liubo666.cn/"/>
-  <updated>2017-06-25T06:26:07.978Z</updated>
+  <updated>2017-06-25T06:50:21.767Z</updated>
   <id>https://blog.liubo666.cn/</id>
   
   <author>
@@ -14,6 +14,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu Mac OS主题</title>
+    <link href="https://blog.liubo666.cn/2017/06/25/ubuntu-Mac-OS%E4%B8%BB%E9%A2%98/"/>
+    <id>https://blog.liubo666.cn/2017/06/25/ubuntu-Mac-OS主题/</id>
+    <published>2017-06-25T06:47:46.000Z</published>
+    <updated>2017-06-25T06:50:21.767Z</updated>
+    
+    <content type="html"><![CDATA[<p>具体步骤：<br><a id="more"></a><br>1、下载 macbuntu 壁纸：<br>Download MacBuntu OS Wallpapers：<a href="http://pan.baidu.com/s/1skQCq2T" target="_blank" rel="external">http://pan.baidu.com/s/1skQCq2T</a></p>
+<p>2、安装 MacBuntu OS Y Theme、Icons 和 cursors：<br>安装命令：<br>sudo add-apt-repository ppa:noobslab/macbuntu<br>sudo apt-get update<br>sudo apt-get install macbuntu-os-icons-lts-v7<br>sudo apt-get install macbuntu-os-ithemes-lts-v7<br>启用主题，需要安装 tweak tool<br>卸载命令：<br>cd /usr/share/icons/mac-cursors &amp;&amp; sudo ./uninstall-mac-cursors.sh<br>sudo apt-get remove macbuntu-os-icons-lts-v7 macbuntu-os-ithemes-lts-v7</p>
+<p>3、安装 Slingscold（替代Launchpad）<br>sudo add-apt-repository ppa:noobslab/macbuntu<br>sudo apt-get update<br>sudo apt-get install slingscold</p>
+<p>4、安装Albert Spotlight (替代 Mac Spotlight)<br>sudo add-apt-repository ppa:noobslab/macbuntu<br>sudo apt-get update<br>sudo apt-get install albert</p>
+<p>5、安装 Plank Dock<br>sudo apt-get install plank<br>安装 Plank 主题：<br>sudo add-apt-repository ppa:noobslab/macbuntu<br>sudo apt-get update<br>sudo apt-get install macbuntu-os-plank-theme-lts-v7<br>安装 Ctrl + Right Click 选择主题。</p>
+<p>卸载主题命令：<br>sudo apt-get autoremove plank macbuntu-os-plank-theme-lts-v7</p>
+<p>6、将面板上的 ‘Ubuntu Desktop’ 文字替换 ‘Mac’<br>cd &amp;&amp; wget -O Mac.po <a href="http://drive.noobslab.com/data/Mac/change-name-on-panel/mac.po" target="_blank" rel="external">http://drive.noobslab.com/data/Mac/change-name-on-panel/mac.po</a><br>cd /usr/share/locale/en/LC_MESSAGES; sudo msgfmt -o unity.mo ~/Mac.po;rm ~/Mac.po;cd<br>语言上如果是其他非英语语言，将 /en 做相应修改：<br>恢复原来的桌面文字命令：<br>cd &amp;&amp; wget -O Ubuntu.po <a href="http://drive.noobslab.com/data/Mac/change-name-on-panel/ubuntu.po" target="_blank" rel="external">http://drive.noobslab.com/data/Mac/change-name-on-panel/ubuntu.po</a><br>cd /usr/share/locale/en/LC_MESSAGES; sudo msgfmt -o unity.mo ~/Ubuntu.po;rm ~/Ubuntu.po;cd</p>
+<p>7、启动器上苹果Logo</p>
+<p>命令：<br>wget -O launcher_bfb.png <a href="http://drive.noobslab.com/data/Mac/launcher-logo/apple/launcher_bfb.png" target="_blank" rel="external">http://drive.noobslab.com/data/Mac/launcher-logo/apple/launcher_bfb.png</a><br>sudo mv launcher_bfb.png /usr/share/unity/icons/<br>恢复图标：<br>wget -O launcher_bfb.png <a href="http://drive.noobslab.com/data/Mac/launcher-logo/ubuntu/launcher_bfb.png" target="_blank" rel="external">http://drive.noobslab.com/data/Mac/launcher-logo/ubuntu/launcher_bfb.png</a><br>sudo mv launcher_bfb.png /usr/share/unity/icons/</p>
+<p>8、安装 Tweak tool 软件启用主题、图标等：<br>sudo apt-get install unity-tweak-tool<br>sudo apt-get install gnome-tweak-tool</p>
+<p>9、为 Libreoffice 安装 Monochrome icons：<br>sudo apt-get install libreoffice-style-sifr<br>然后在 LibreOffice 菜单进行设置 “Tools” &gt; “Options” &gt; “LibreOffice” &gt; “View” 选择 “Sifr” “Icon size and style”。参照下面截图设置：</p>
+<p>10、配置 Mac 字体：</p>
+<p>安装字体命令：<br>wget -O mac-fonts.zip <a href="http://drive.noobslab.com/data/Mac/macfonts.zip" target="_blank" rel="external">http://drive.noobslab.com/data/Mac/macfonts.zip</a><br>sudo unzip mac-fonts.zip -d /usr/share/fonts; rm mac-fonts.zip<br>sudo fc-cache -f -v<br>使用 Unity-Tweak-Tool, Gnome-Tweak-Tool 或 Ubuntu Tweak 软件更换字体。</p>
+<p>11、修改启动界面：</p>
+<p>sudo add-apt-repository ppa:noobslab/themes<br>sudo apt-get update<br>sudo apt-get install macbuntu-os-bscreen-lts-v7<br>如果你喜欢 MBuntu 启动界面，你想恢复到 Ubuntu ，使用命令：<br>sudo apt-get autoremove macbuntu-os-bscreen-lts-v7</p>
+<p>12、登陆迎宾界面：</p>
+<p>注意安装这个东东有风险，如果你不是在意，建议不安装，安装这个仅仅适合于 Ubuntu Unity – Lightdm 和 Ubuntu Gnome – gdm，其他桌面环境有风险。<br>sudo add-apt-repository ppa:noobslab/themes<br>sudo apt-get update<br>sudo apt-get install macbuntu-os-lightdm-lts-v7<br>卸载恢复命令：<br>sudo apt-get remove macbuntu-os-lightdm-lts-v7</p>
+<p>OK，完工，好好享受你的新桌面吧！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;具体步骤：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="ubuntu" scheme="https://blog.liubo666.cn/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>linux wps 安装</title>
