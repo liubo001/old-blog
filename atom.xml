@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.liubo666.cn/"/>
-  <updated>2017-06-25T03:37:27.415Z</updated>
+  <updated>2017-06-25T03:44:52.734Z</updated>
   <id>https://blog.liubo666.cn/</id>
   
   <author>
@@ -20,11 +20,9 @@
     <link href="https://blog.liubo666.cn/2017/06/25/linux-wps-%E5%AE%89%E8%A3%85/"/>
     <id>https://blog.liubo666.cn/2017/06/25/linux-wps-安装/</id>
     <published>2017-06-25T03:25:19.000Z</published>
-    <updated>2017-06-25T03:37:27.415Z</updated>
+    <updated>2017-06-25T03:44:52.734Z</updated>
     
-    <content type="html"><![CDATA[<p>主要分为两步</p>
-<h1 id="1-在官网下载最新安装包"><a href="#1-在官网下载最新安装包" class="headerlink" title="1.在官网下载最新安装包"></a>1.在官网下载最新安装包</h1><p>然后dpkg -i 文件名</p>
-<h1 id="2-弹出系统缺少字体现象"><a href="#2-弹出系统缺少字体现象" class="headerlink" title="2.弹出系统缺少字体现象"></a>2.弹出系统缺少字体现象</h1><p>出现提示的原因是因为WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。</p>
+    <content type="html"><![CDATA[<p>主要分为两步<br><strong>1.在官网下载最新安装包</strong><br>然后dpkg -i 文件名<br><strong>2.弹出系统缺少字体现象</strong><br>出现提示的原因是因为WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。</p>
 <p>具体操作步骤如下：<br><a id="more"></a></p>
 <ol>
 <li>下载缺失的字体文件，然后复制到Linux系统中的/usr/share/fonts文件夹中。</li>
@@ -50,9 +48,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;主要分为两步&lt;/p&gt;
-&lt;h1 id=&quot;1-在官网下载最新安装包&quot;&gt;&lt;a href=&quot;#1-在官网下载最新安装包&quot; class=&quot;headerlink&quot; title=&quot;1.在官网下载最新安装包&quot;&gt;&lt;/a&gt;1.在官网下载最新安装包&lt;/h1&gt;&lt;p&gt;然后dpkg -i 文件名&lt;/p&gt;
-&lt;h1 id=&quot;2-弹出系统缺少字体现象&quot;&gt;&lt;a href=&quot;#2-弹出系统缺少字体现象&quot; class=&quot;headerlink&quot; title=&quot;2.弹出系统缺少字体现象&quot;&gt;&lt;/a&gt;2.弹出系统缺少字体现象&lt;/h1&gt;&lt;p&gt;出现提示的原因是因为WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。&lt;/p&gt;
+      &lt;p&gt;主要分为两步&lt;br&gt;&lt;strong&gt;1.在官网下载最新安装包&lt;/strong&gt;&lt;br&gt;然后dpkg -i 文件名&lt;br&gt;&lt;strong&gt;2.弹出系统缺少字体现象&lt;/strong&gt;&lt;br&gt;出现提示的原因是因为WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。&lt;/p&gt;
 &lt;p&gt;具体操作步骤如下：&lt;br&gt;
     
     </summary>
