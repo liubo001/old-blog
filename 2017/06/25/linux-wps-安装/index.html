@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://blog.liubo666.cn">
-  <title>Tag: 鸡汤 | 刘博的Blog</title>
+  <title>linux wps 安装 | 刘博的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="刘博的Blog">
-<meta property="og:url" content="https://blog.liubo666.cn/tags/鸡汤/index.html">
+  <meta name="description" content="主要分为两步 1.在官网下载最新安装包然后dpkg -i 文件名 2.弹出系统缺少字体现象出现提示的原因是因为WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。 具体操作步骤如下：">
+<meta name="keywords" content="ubuntu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux wps 安装">
+<meta property="og:url" content="https://blog.liubo666.cn/2017/06/25/linux-wps-安装/index.html">
 <meta property="og:site_name" content="刘博的Blog">
+<meta property="og:description" content="主要分为两步 1.在官网下载最新安装包然后dpkg -i 文件名 2.弹出系统缺少字体现象出现提示的原因是因为WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。 具体操作步骤如下：">
+<meta property="og:updated_time" content="2017-06-25T03:37:27.415Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="刘博的Blog">
+<meta name="twitter:title" content="linux wps 安装">
+<meta name="twitter:description" content="主要分为两步 1.在官网下载最新安装包然后dpkg -i 文件名 2.弹出系统缺少字体现象出现提示的原因是因为WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。 具体操作步骤如下：">
   
     <link rel="alternative" href="/atom.xml" title="刘博的Blog" type="application/atom+xml">
   
@@ -166,48 +171,101 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-linux-wps-安装" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      linux wps 安装
+    </h1>
+  
+
+        
+        <a href="/2017/06/25/linux-wps-安装/" class="archive-article-date">
+  	<time datetime="2017-06-25T03:25:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-25</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>主要分为两步</p>
+<h1 id="1-在官网下载最新安装包"><a href="#1-在官网下载最新安装包" class="headerlink" title="1.在官网下载最新安装包"></a>1.在官网下载最新安装包</h1><p>然后dpkg -i 文件名</p>
+<h1 id="2-弹出系统缺少字体现象"><a href="#2-弹出系统缺少字体现象" class="headerlink" title="2.弹出系统缺少字体现象"></a>2.弹出系统缺少字体现象</h1><p>出现提示的原因是因为WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。</p>
+<p>具体操作步骤如下：<br><a id="more"></a></p>
+<ol>
+<li>下载缺失的字体文件，然后复制到Linux系统中的/usr/share/fonts文件夹中。</li>
+</ol>
+<p>国外下载地址：<a href="https://www.dropbox.com/s/lfy4hvq95ilwyw5/wps_symbol_fonts.zip" target="_blank" rel="external">https://www.dropbox.com/s/lfy4hvq95ilwyw5/wps_symbol_fonts.zip</a></p>
+<p>国内下载地址：<a href="https://pan.baidu.com/s/1eS6xIzo" target="_blank" rel="external">https://pan.baidu.com/s/1eS6xIzo</a></p>
+<p>（上述数据来源网络，侵删）</p>
+<p>下载完成后，解压并进入目录中，继续执行：</p>
+<p>sudo cp * /usr/share/fonts</p>
+<ol>
+<li>执行以下命令,生成字体的索引信息：</li>
+</ol>
+<p>sudo mkfontscale</p>
+<p>sudo mkfontdir</p>
+<ol>
+<li>运行fc-cache命令更新字体缓存。</li>
+</ol>
+<p>sudo fc-cache</p>
+<ol>
+<li>重启wps即可，字体缺失的提示不再出现。</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>非常感谢<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/16/人生需淡定/" class="archive-article-date">
-  	<time datetime="2017-06-16T14:42:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/16/人生需淡定/">人生需淡定</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">鸡汤</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">ubuntu</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -220,115 +278,98 @@ var _hmt = _hmt || [];
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://blog.liubo666.cn/2017/06/25/linux-wps-安装/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/14/没有上锁的门/" class="archive-article-date">
-  	<time datetime="2017-06-14T14:12:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/14/没有上锁的门/">没有上锁的门</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">鸡汤</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/其他/" class="article-tag-list-link color3">其他</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/14/一朵玫瑰花/" class="archive-article-date">
-  	<time datetime="2017-06-14T13:09:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/14/一朵玫瑰花/">一朵玫瑰花</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">鸡汤</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/其他/" class="article-tag-list-link color3">其他</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/06/17/ubuntu-php环境配置/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ubuntu php环境配置</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: document.location.href, 
+    sourceId: "",
+    productKey: "bd027ec9a2d349b3aca449d427ff17f3",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -351,9 +392,9 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

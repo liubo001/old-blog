@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.liubo666.cn/"/>
-  <updated>2017-06-17T05:06:58.976Z</updated>
+  <updated>2017-06-25T03:37:27.415Z</updated>
   <id>https://blog.liubo666.cn/</id>
   
   <author>
@@ -14,6 +14,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux wps 安装</title>
+    <link href="https://blog.liubo666.cn/2017/06/25/linux-wps-%E5%AE%89%E8%A3%85/"/>
+    <id>https://blog.liubo666.cn/2017/06/25/linux-wps-安装/</id>
+    <published>2017-06-25T03:25:19.000Z</published>
+    <updated>2017-06-25T03:37:27.415Z</updated>
+    
+    <content type="html"><![CDATA[<p>主要分为两步</p>
+<h1 id="1-在官网下载最新安装包"><a href="#1-在官网下载最新安装包" class="headerlink" title="1.在官网下载最新安装包"></a>1.在官网下载最新安装包</h1><p>然后dpkg -i 文件名</p>
+<h1 id="2-弹出系统缺少字体现象"><a href="#2-弹出系统缺少字体现象" class="headerlink" title="2.弹出系统缺少字体现象"></a>2.弹出系统缺少字体现象</h1><p>出现提示的原因是因为WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。</p>
+<p>具体操作步骤如下：<br><a id="more"></a></p>
+<ol>
+<li>下载缺失的字体文件，然后复制到Linux系统中的/usr/share/fonts文件夹中。</li>
+</ol>
+<p>国外下载地址：<a href="https://www.dropbox.com/s/lfy4hvq95ilwyw5/wps_symbol_fonts.zip" target="_blank" rel="external">https://www.dropbox.com/s/lfy4hvq95ilwyw5/wps_symbol_fonts.zip</a></p>
+<p>国内下载地址：<a href="https://pan.baidu.com/s/1eS6xIzo" target="_blank" rel="external">https://pan.baidu.com/s/1eS6xIzo</a></p>
+<p>（上述数据来源网络，侵删）</p>
+<p>下载完成后，解压并进入目录中，继续执行：</p>
+<p>sudo cp * /usr/share/fonts</p>
+<ol>
+<li>执行以下命令,生成字体的索引信息：</li>
+</ol>
+<p>sudo mkfontscale</p>
+<p>sudo mkfontdir</p>
+<ol>
+<li>运行fc-cache命令更新字体缓存。</li>
+</ol>
+<p>sudo fc-cache</p>
+<ol>
+<li>重启wps即可，字体缺失的提示不再出现。</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;主要分为两步&lt;/p&gt;
+&lt;h1 id=&quot;1-在官网下载最新安装包&quot;&gt;&lt;a href=&quot;#1-在官网下载最新安装包&quot; class=&quot;headerlink&quot; title=&quot;1.在官网下载最新安装包&quot;&gt;&lt;/a&gt;1.在官网下载最新安装包&lt;/h1&gt;&lt;p&gt;然后dpkg -i 文件名&lt;/p&gt;
+&lt;h1 id=&quot;2-弹出系统缺少字体现象&quot;&gt;&lt;a href=&quot;#2-弹出系统缺少字体现象&quot; class=&quot;headerlink&quot; title=&quot;2.弹出系统缺少字体现象&quot;&gt;&lt;/a&gt;2.弹出系统缺少字体现象&lt;/h1&gt;&lt;p&gt;出现提示的原因是因为WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。&lt;/p&gt;
+&lt;p&gt;具体操作步骤如下：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="ubuntu" scheme="https://blog.liubo666.cn/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>ubuntu php环境配置</title>
