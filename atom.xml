@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.liubo666.cn/"/>
-  <updated>2017-06-25T06:50:21.767Z</updated>
+  <updated>2017-06-26T14:19:56.613Z</updated>
   <id>https://blog.liubo666.cn/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>wine QQ 安装</title>
+    <link href="https://blog.liubo666.cn/2017/06/26/wine-QQ-%E5%AE%89%E8%A3%85/"/>
+    <id>https://blog.liubo666.cn/2017/06/26/wine-QQ-安装/</id>
+    <published>2017-06-26T14:17:12.000Z</published>
+    <updated>2017-06-26T14:19:56.613Z</updated>
+    
+    <content type="html"><![CDATA[<p>wineQQ更新地址：<a href="http://phpcj.org/wineqq" target="_blank" rel="external">http://phpcj.org/wineqq</a></p>
+<p>使用步骤（只需两步，不分先后）：<br><a id="more"></a><br>步骤一、安装wine（详见：<a href="https://www.winehq.org/download）" target="_blank" rel="external">https://www.winehq.org/download）</a><br>// ubuntu/ubuntukylin/mint（需要加ppa源，再安装）<br>sudo add-apt-repository ppa:wine/wine-builds;</p>
+<p>sudo apt-get update;</p>
+<p>sudo apt-get install winehq-devel</p>
+<p>步骤二、将压缩包解压到用户主目录（解压出来的是2个隐藏目录和本说明文件）<br>~ $tar xvf wineQQ8.9.3_21159.tar.xz -C ~/</p>
+<p>完成上面两步，点击系统菜单，应该就有了Wine QQ的菜单项。</p>
+<p>问题：<br>1、无法记住密码。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;wineQQ更新地址：&lt;a href=&quot;http://phpcj.org/wineqq&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://phpcj.org/wineqq&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用步骤（只需两步，不分先后）：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="其他" scheme="https://blog.liubo666.cn/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="ubuntu" scheme="https://blog.liubo666.cn/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>ubuntu Mac OS主题</title>
